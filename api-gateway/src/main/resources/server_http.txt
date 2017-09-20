@@ -1,0 +1,81 @@
+2017-09-20 16:26:28.591  INFO 32950 --- [io-28081-exec-5] c.s.domains.configuration.ApiUser        : API - Call -> geSecureUsers
+Allow unsafe renegotiation: false
+Allow legacy hello messages: true
+Is initial handshake: true
+Is secure renegotiation: false
+http-nio-28081-exec-5, setSoTimeout(0) called
+http-nio-28081-exec-5, the previous server name in SNI (type=host_name (0), value=ddsa.configuration.domain) was replaced with (type=host_name (0), value=ddsa.configuration.domain)
+Ignoring unsupported cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_RSA_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_DHE_DSS_WITH_AES_128_CBC_SHA256 for TLSv1
+Ignoring unsupported cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 for TLSv1.1
+Ignoring unsupported cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 for TLSv1.1
+Ignoring unsupported cipher suite: TLS_RSA_WITH_AES_128_CBC_SHA256 for TLSv1.1
+Ignoring unsupported cipher suite: TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256 for TLSv1.1
+Ignoring unsupported cipher suite: TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256 for TLSv1.1
+Ignoring unsupported cipher suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 for TLSv1.1
+Ignoring unsupported cipher suite: TLS_DHE_DSS_WITH_AES_128_CBC_SHA256 for TLSv1.1
+%% Client cached [Session-1, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256]
+%% Try resuming [Session-1, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256] from port 59971
+*** ClientHello, TLSv1.2
+RandomCookie:  GMT: 1489100036 bytes = { 116, 89, 4, 214, 111, 69, 52, 5, 62, 77, 37, 2, 5, 69, 146, 175, 239, 1, 115, 20, 219, 45, 59, 39, 254, 210, 90, 220 }
+Session ID:  {13, 71, 209, 49, 214, 235, 233, 61, 176, 186, 194, 251, 246, 235, 117, 90, 29, 240, 190, 82, 187, 82, 240, 250, 219, 193, 214, 188, 1, 10, 216, 141}
+Cipher Suites: [TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+Compression Methods:  { 0 }
+Extension elliptic_curves, curve names: {secp256r1, secp384r1, secp521r1, sect283k1, sect283r1, sect409k1, sect409r1, sect571k1, sect571r1, secp256k1}
+Extension ec_point_formats, formats: [uncompressed]
+Extension signature_algorithms, signature_algorithms: SHA512withECDSA, SHA512withRSA, SHA384withECDSA, SHA384withRSA, SHA256withECDSA, SHA256withRSA, SHA256withDSA, SHA224withECDSA, SHA224withRSA, SHA224withDSA, SHA1withECDSA, SHA1withRSA, SHA1withDSA
+Extension server_name, server_name: [type=host_name (0), value=ddsa.configuration.domain]
+***
+http-nio-28081-exec-5, WRITE: TLSv1.2 Handshake, length = 233
+http-nio-28081-exec-5, READ: TLSv1.2 Handshake, length = 81
+*** ServerHello, TLSv1.2
+RandomCookie:  GMT: -759863303 bytes = { 125, 59, 49, 4, 123, 24, 105, 253, 188, 51, 10, 164, 125, 233, 132, 31, 199, 106, 73, 250, 50, 204, 175, 25, 218, 50, 212, 84 }
+Session ID:  {13, 71, 209, 49, 214, 235, 233, 61, 176, 186, 194, 251, 246, 235, 117, 90, 29, 240, 190, 82, 187, 82, 240, 250, 219, 193, 214, 188, 1, 10, 216, 141}
+Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+Compression Method: 0
+Extension renegotiation_info, renegotiated_connection: <empty>
+***
+CONNECTION KEYGEN:
+Client Nonce:
+0000: 59 C2 DD 04 74 59 04 D6   6F 45 34 05 3E 4D 25 02  Y...tY..oE4.>M%.
+0010: 05 45 92 AF EF 01 73 14   DB 2D 3B 27 FE D2 5A DC  .E....s..-;'..Z.
+Server Nonce:
+0000: D3 B5 68 F9 7D 3B 31 04   7B 18 69 FD BC 33 0A A4  ..h..;1...i..3..
+0010: 7D E9 84 1F C7 6A 49 FA   32 CC AF 19 DA 32 D4 54  .....jI.2....2.T
+Master Secret:
+0000: 6E 6F EA AC E9 C8 22 34   71 67 CF 6C F3 77 A5 B0  no...."4qg.l.w..
+0010: 23 18 86 73 BA 13 38 40   CB 17 6C DB C4 47 F9 53  #..s..8@..l..G.S
+0020: 4F 3C E3 B7 BA 6E 2E 51   08 E6 9A 40 19 6D A9 A0  O<...n.Q...@.m..
+... no MAC keys used for this cipher
+Client write key:
+0000: 93 6B 5E F1 01 DD 73 8E   D3 B4 00 E4 CD 3F 1D 1B  .k^...s......?..
+Server write key:
+0000: B5 B1 E9 8F 6B E5 32 79   9F 29 A9 F2 EC 4C 67 52  ....k.2y.)...LgR
+Client write IV:
+0000: 40 6F 81 C2                                        @o..
+Server write IV:
+0000: FA B2 8A E1                                        ....
+%% Server resumed [Session-1, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256]
+http-nio-28081-exec-5, READ: TLSv1.2 Change Cipher Spec, length = 1
+http-nio-28081-exec-5, READ: TLSv1.2 Handshake, length = 40
+*** Finished
+verify_data:  { 234, 192, 220, 24, 152, 12, 24, 4, 16, 6, 57, 181 }
+***
+http-nio-28081-exec-5, WRITE: TLSv1.2 Change Cipher Spec, length = 1
+*** Finished
+verify_data:  { 156, 238, 96, 57, 67, 211, 162, 46, 88, 116, 251, 85 }
+***
+http-nio-28081-exec-5, WRITE: TLSv1.2 Handshake, length = 40
+http-nio-28081-exec-5, WRITE: TLSv1.2 Application Data, length = 193
+http-nio-28081-exec-5, READ: TLSv1.2 Application Data, length = 325
+2017-09-20 16:26:28.602  INFO 32950 --- [io-28081-exec-5] c.s.domains.configuration.ApiUser        : [{codigo=1, nonbre=David Dali, apellido=Susanibar Arce, edad=34}]
+Keep-Alive-Timer, called close()
+Keep-Alive-Timer, called closeInternal(true)
+Keep-Alive-Timer, SEND TLSv1.2 ALERT:  warning, description = close_notify
+Keep-Alive-Timer, WRITE: TLSv1.2 Alert, length = 26
+Keep-Alive-Timer, called closeSocket(true)

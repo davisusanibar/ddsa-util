@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $("#listadoUserSecure").DataTable({
         "ajax": {
-            "url": "http://localhost:28081/user/secure/all",
+            "url": "https://localhost:28081/user/secure/all",
             "type": "GET",
             "dataSrc": ""
         },
