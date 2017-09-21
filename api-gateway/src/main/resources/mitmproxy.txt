@@ -1,0 +1,14 @@
+1.- Adding certificate:
+MacBook-Pro-de-Silvia-2% sudo keytool -import -alias importcertmitmproxy -keystore /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.cer
+
+Proxy:
+java -DproxyHost=127.0.0.1 -DproxyPort=8080
+
+
+
+4.- Eliminando certificado:
+
+MacBook-Pro-de-Silvia-2% sudo keytool -delete -alias importcertmitmproxy -keystore /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/security/cacerts
+Password:
+Introduzca la contraseña del almacén de claves:  changeit
+MacBook-Pro-de-Silvia-2%

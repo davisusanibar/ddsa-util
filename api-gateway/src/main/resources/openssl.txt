@@ -53,3 +53,7 @@ Huellas digitales del Certificado:
 ¿Confiar en este certificado? [no]:  si
 Se ha agregado el certificado al almacén de claves
 MacBook-Pro-de-Silvia-2%
+
+4.- Eliminando certificado:
+
+keytool -delete -alias importnginxcert -keystore /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/security/cacerts
