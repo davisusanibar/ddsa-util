@@ -20,17 +20,17 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api")
 public class ApiUser {
 
     final static Logger miLogger = Logger.getLogger(ApiUser.class);
 
-    @RequestMapping("/insecure/all")
+    @RequestMapping("/user/all/ssl")
     public ResponseEntity<?> getInsecureUsers() throws Exception {
         miLogger.info("API - Call -> getInsecureUsers");
         try {
             RestTemplate restTemplate = new RestTemplate();
-            String getUser = "http://localhost:18080/domain/user/all";
+            String getUser = "https://localhost:28082/user/all";
 
             ResponseEntity<Object> response = restTemplate.getForEntity(getUser, Object.class);
 
@@ -42,29 +42,13 @@ public class ApiUser {
         }
     }
 
-    @RequestMapping("/secure/all")
+    @RequestMapping("/user/all")
     public ResponseEntity<?> geSecureUsers() throws Exception {
         miLogger.info("API - Call -> geSecureUsers");
         try {
             RestTemplate restTemplate = new RestTemplate();
-            String getUser = "https://ddsa.configuration.domain:1443/domain/user/all";
-
-            ResponseEntity<Object> response = restTemplate.getForEntity(getUser, Object.class);
-
-            miLogger.info(response.getBody());
-
-            return response;
-        } catch (RestClientException rce){
-            throw new Exception("Error to call rest template. Error: " + rce.getMessage());
-        }
-    }
-
-    @RequestMapping("/secureok/all")
-    public ResponseEntity<?> geSecureOkUsers() throws Exception {
-        miLogger.info("API - Call -> geSecureOkUsers");
-        try {
-            RestTemplate restTemplate = new RestTemplate();
-            String getUser = "https://ddsa.configuration.domain:1443/domain/user/all";
+            //String getUser = "https://example.com:28083/user/all";
+            String getUser = "https://localhost:28083/user/all";
 
             ResponseEntity<Object> response = restTemplate.getForEntity(getUser, Object.class);
 
